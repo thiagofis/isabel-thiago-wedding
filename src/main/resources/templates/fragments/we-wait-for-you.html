@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<!-- About Section Start-->
+<div th:fragment="we-wait-for-you" class="section fp-auto-height-responsive content-section about" data-anchor="we-wait-for-you-page">
+    <div class="container-fluid p-0 fullheight">
+        <div class="row m-0 flex-xl-row-reverse fullheight">
+
+            <!-- Features Section Media Start -->
+            <div class="col-12 col-xl-6 p-0 content-section_media" style="background-image:url(img/photos/we-wait-for-you.jpg);">
+
+                <!-- Color Layer Start -->
+                <div class="layer-black-04" style="background-color: rgba(0,0,0,.6);"></div>
+                <!-- Color Layer End -->
+
+                <!-- Blockquote Start -->
+                <div class="blockquote-content">
+                    <blockquote cite="">
+                        <i class="ion-quote"></i>
+                        <p class="light-text">My dear, here we must run as fast as we can, just to stay in place.
+                            And if you wish to go anywhere you must run twice as fast as that.</p>
+                        <cite class="light-text-06">
+                            <span>Lewis Carroll</span>
+                            <span>Alice in Wonderland</span>
+                        </cite>
+                    </blockquote>
+                </div>
+                <!-- Blockquote End -->
+
+            </div>
+            <!-- Features Section Media End -->
+
+            <!-- About Section Info Start -->
+            <div class="col-12 col-xl-6 p-0 content-section_info">
+                <div class="content-block">
+
+                    <!-- Section Title Start -->
+                    <div class="section-title">
+                        <span class="subtitle">Você</span>
+                        <span class="title">Esperamos por você</span>
+                        <h2>Confirme a<br>sua presença</h2>
+                        <span class="divider"></span>
+                        `
+                        <!-- Contact Form Container Start -->
+                        <div class="form-content contact">
+
+                            <!-- Reply Group Start -->
+                            <div class="reply-group">
+                                <i class="icon ion-ios-checkmark txt-light"></i>
+                                <p class="reply-group__title txt-light"><span>Done</span>!</p>
+                                <span class="reply-group__text txt-light-transparent">Thanks for your message. We will get back as soon as possible.</span>
+                            </div>
+                            <!-- Reply Group End -->
+
+                            <!-- Contact Form Start -->
+                            <form class="form form-dark contact-form" id="contact-form">
+
+                                <!-- Hidden Required Fields -->
+                                <input type="hidden" name="project_name" value="Mixio Contact Form Message">
+                                <input type="hidden" name="admin_email" value="support@mixdesign.club">
+                                <input type="hidden" name="form_subject" value="Contact Form Message">
+                                <!-- END Hidden Required Fields-->
+
+                                <input class="" type="text" name="Name" placeholder="Digite aqui o seu nome*" required>
+                                <input class="" type="email" name="E-mail" placeholder="Email Adress*">
+                                <textarea class="" name="Message" placeholder="A Few Words*" required></textarea>
+                                <span class="inputs-description">*Required fields</span>
+
+                                <button class="btn btn-line">
+                                    <span>Send</span>
+                                </button>
+
+                            </form>
+                            <!-- Contact Form End -->
+
+                        </div>
+                        <!-- Contact Form Container End -->
+
+                    </div>
+                    <!-- Section Title End -->
+
+                </div>
+            </div>
+            <!-- About Section Info End -->
+
+
+
+        </div>
+    </div>
+</div>
+<!-- About Section End-->
+
+</body>
+</html>
