@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<!-- Loader Start-->
+<div class="loader" th:fragment="loader">
+    <div class="loader-content">
+        <div class="loader-logo slideInDown">
+            <!-- Your Logo Here -->
+            <img th:src="@{img/mixio-logo-loader.svg}" alt="Isabel & Thiago">
+        </div>
+        <div class="loader-caption slideInUp">
+            <p class="loading-text">Loading</p>
+            <span class="loading-dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </span>
+        </div>
+    </div>
+</div>
+<!-- Loader End-->
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+.form-content form .gift-group input{
+  height: 20px;
+  width: 5%;
+  display: initial;
+  vertical-align: text-top;
+  cursor: pointer;
+  margin: 0;
+}
+
+.form-content form .gift-group span{
+	color : #000;	
+}
+
+.form-content form .gift-group em{
+	color : #616161;
+	font-style: italic;
+	font-size: 11px;
+	font-weight: 700;
+	margin-top:0;
+	margin-bottom: 20px;	
+	margin-left: 38px;
+    vertical-align: super;
+}
+
+.form-content form button.gift{
+	padding: 18px 41px;
+    text-align: center;
+	background-color:#191919;
+	color: #fff;
+	margin-top: 10px;
+}
+
+.form-content form button.gift:hover{
+	padding: 18px 41px;
+    text-align: center;
+	background-color:#191919;
+	color: #fff;
+	text-decoration:initial;
+}
+
+.features .feature-item div.qr-code {
+	height: 200px;
+}
+
+.form-content.gift p { 
+	margin-bottom: 7px;
+}
