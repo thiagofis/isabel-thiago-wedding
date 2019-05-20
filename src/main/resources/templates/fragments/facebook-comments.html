@@ -5,51 +5,32 @@
 </head>
 <body>
 
-<div th:fragment="facebook-comments" class="section fp-auto-height-responsive content-section contact" data-anchor="facebook-comments-page">
+<!-- Home Section Start-->
+<div class="section fp-auto-height-responsive home" data-anchor="facebook-comments-page" th:fragment="facebook-comments">
     <div class="container-fluid p-0 fullheight">
-        <div class="row m-0 flex-xl-row-reverse fullheight">
+        <div class="row m-0 fullheight">
 
-            <!-- Contact Section Info Start-->
-            <div class="col-12 col-xl-6 p-0 content-section_info">
+            <!-- Main Section Intro Start -->
+            <div class="col-12 fullheight home_intro" style="background-image:url(img/photos/comments.jpg);">
 
-                <div class="content-block">
+                <div class="layer-black"></div>
 
-                    <!-- Section Title Start -->
-                    <div class="section-title">
-                        <span class="subtitle">Nosso Mural</span>
-                        <span class="title">Comentários</span>
-                        <h2>Deixe uma<br>mensagem para os noivos</h2>
-                        <span class="divider"></span>
-                        <p class="contact-text">Uma boa palavra vale mais do que um presente.</p>
-                    </div>
-                    <!-- Section Title End -->
-
+                <!-- Main Headline Start -->
+                <div class="headline">
+                    <h1 class="light-text">Nosso mural<br>de mensagens</h1>
+                    <p class="light-text">As suas palavras valem muito pra gente.</p>
+                    <a href="#" class="btn btn-line btn-line-light" id="writealine-trigger">
+                        <span>Clique aqui para deixar uma mensagem para os noivos</span>
+                    </a>
                 </div>
-
+                <!-- Main Headline End -->
             </div>
-            <!-- Contact Section Info End-->
-
-            <!-- Contact Section Media Start-->
-            <div class="col-12 col-xl-6 p-0 fullheight content-section_info">
-
-
-                <div class="fb_container">
-                    <!-- Facebook Comments Start -->
-                    <div id="fb-root"></div>
-                    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v3.3"></script>
-                    <div class="fb-comments" data-href="http://localhost:8080/" data-width="100%" data-numposts="5" data-order-by="reverse_time"></div>
-                    <!-- Facebook Comments End -->
-                </div>
-
-
-
-            </div>
-            <!-- Contact Section Media End-->
+            <!-- Main Section Intro End -->
 
         </div>
     </div>
 </div>
-
+<!-- Home Section End-->
 
 </body>
 </html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+
+
+<!-- Write-a-Line Popup Start -->
+<div class="popup writealine" th:fragment="popup-facebook-comments">
+    <div class="popup-content" style="background-image:url(img/backgrounds/bg-popup.jpg);max-width: 1000px;">
+
+        <!-- Close Button Start -->
+        <a class="popup-close" href="#0" id="writealine-close">
+            <span class="icon ion-ios-close-empty"></span>
+        </a>
+        <!-- Close Button End -->
+
+        <div class="popup-background">
+
+            <!-- Write-a-Line Title Start -->
+            <div class="popup-title">
+                <p class="title">Mural de mensagens</p>
+                <p class="subtitle">Deixe a sua mensagem para os noivos.</p>
+            </div>
+            <!-- Write-a-Line Title End -->
+
+            <div class="fb_container">
+                <!-- Facebook Comments Start -->
+                <div id="fb-root"></div>
+                <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v3.3"></script>
+                <div class="fb-comments" data-href="http://localhost:8080/" data-width="100%" data-numposts="5" data-order-by="reverse_time"></div>
+                <!-- Facebook Comments End -->
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
