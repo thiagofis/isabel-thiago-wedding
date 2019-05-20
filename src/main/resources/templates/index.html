@@ -112,7 +112,8 @@
 
 
     <div th:replace="fragments/popup-about-us :: popup-about-us"></div>
-   <!-- <div th:replace="fragments/popup-facebook-comments :: popup-facebook-comments"></div> -->
+    <div th:replace="fragments/popup-facebook-comments :: popup-facebook-comments"></div>
+    <div th:replace="fragments/gallary-photo-swipe-element :: gallary-photo-swipe-element"></div>
 
     <!-- Load Scripts Start-->
     <script th:src="@{js/libs.min.js}"></script>
@@ -121,7 +122,7 @@
     <script th:src="@{js/maps/map-dark.js}"></script>
     <script th:src="@{https://maps.googleapis.com/maps/api/js(key='AIzaSyC_eHlYUcq_MCDuQBPwjs5ljaUQ25umFu0')}"></script>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v3.3"></script>
-
+    <script th:src="@{js/popup-facebook-comments.js}" async defer></script>
     <!-- Load Scripts End-->
 
 </body>
