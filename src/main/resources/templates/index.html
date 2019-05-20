@@ -101,7 +101,7 @@
     <div class="menu-black-layer"></div>
     <nav th:replace="fragments/navigation :: navigation"></nav>
 
-    <div id="fullpage-scroll">
+    <div id="fullpage">
         <div th:replace="fragments/countdown :: countdown"></div>
         <div th:replace="fragments/about-us :: about-us"></div>
         <div th:replace="fragments/we-wait-for-you :: we-wait-for-you"></div>
@@ -110,6 +110,8 @@
         <div th:replace="fragments/facebook-comments :: facebook-comments"></div>
     </div>
 
+
+    <div th:replace="fragments/popup-about-us :: popup-about-us"></div>
 
     <!-- Load Scripts Start-->
     <script th:src="@{js/libs.min.js}"></script>
