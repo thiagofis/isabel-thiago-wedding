@@ -6,12 +6,12 @@
 <body>
 
 <!-- About Section Start-->
-<div th:fragment="we-wait-for-you" class="section fp-auto-height-responsive content-section about" data-anchor="we-wait-for-you-page">
+<div th:fragment="we-are-waiting-for-you" class="section fp-auto-height-responsive content-section about" data-anchor="we-are-waiting-for-you-page">
     <div class="container-fluid p-0 fullheight">
         <div class="row m-0 flex-xl-row-reverse fullheight">
 
             <!-- Features Section Media Start -->
-            <div class="col-12 col-xl-6 p-0 content-section_media" style="background-image:url(img/photos/we-wait-for-you.jpg);">
+            <div class="col-12 col-xl-6 p-0 content-section_media" style="background-image:url(img/photos/we-are-waiting-for-you.jpg);">
 
                 <!-- Color Layer Start -->
                 <div class="layer-black-04" style="background-color: rgba(0,0,0,.6);"></div>
@@ -44,7 +44,7 @@
                         <span class="title">Esperamos por você</span>
                         <h2>Confirme a<br>sua presença</h2>
                         <span class="divider"></span>
-                        `
+
                         <!-- Contact Form Container Start -->
                         <div class="form-content contact">
 
@@ -57,23 +57,15 @@
                             <!-- Reply Group End -->
 
                             <!-- Contact Form Start -->
-                            <form class="form form-dark contact-form" id="contact-form">
+                            <form class="form form-dark contact-form" id="contact-form" action="#" th:action="@{/guest}" method="post">
 
-                                <!-- Hidden Required Fields -->
-                                <input type="hidden" name="project_name" value="Mixio Contact Form Message">
-                                <input type="hidden" name="admin_email" value="support@mixdesign.club">
-                                <input type="hidden" name="form_subject" value="Contact Form Message">
-                                <!-- END Hidden Required Fields-->
+                                <input class="" type="text" name="guestName" placeholder="Digite aqui o seu nome*" required>
+                                <input class="" type="number" name="companionsNumber" placeholder="Número de acompanhnates" required>
+                                <span class="inputs-description">*Campos obrigatórios</span>
 
-                                <input class="" type="text" name="Name" placeholder="Digite aqui o seu nome*" required>
-                                <input class="" type="email" name="E-mail" placeholder="Email Adress*">
-                                <textarea class="" name="Message" placeholder="A Few Words*" required></textarea>
-                                <span class="inputs-description">*Required fields</span>
-
-                                <button class="btn btn-line">
-                                    <span>Send</span>
+                                <button class="btn btn-line" type="submit">
+                                    <span>Clique aqui para enviar a sua confirmação</span>
                                 </button>
-
                             </form>
                             <!-- Contact Form End -->
 

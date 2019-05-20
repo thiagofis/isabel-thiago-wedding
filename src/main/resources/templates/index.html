@@ -104,7 +104,7 @@
     <div id="fullpage">
         <div th:replace="fragments/countdown :: countdown"></div>
         <div th:replace="fragments/about-us :: about-us"></div>
-        <div th:replace="fragments/we-wait-for-you :: we-wait-for-you"></div>
+        <!--<div th:replace="fragments/we-are-waiting-for-you :: we-are-waiting-for-you"></div>-->
         <div th:replace="fragments/gift-list :: gift-list"></div>
         <div th:replace="fragments/location :: location"></div>
         <div th:replace="fragments/facebook-comments :: facebook-comments"></div>
@@ -112,7 +112,7 @@
 
 
     <div th:replace="fragments/popup-about-us :: popup-about-us"></div>
-    <div th:replace="fragments/popup-facebook-comments :: popup-facebook-comments"></div>
+   <!-- <div th:replace="fragments/popup-facebook-comments :: popup-facebook-comments"></div> -->
 
     <!-- Load Scripts Start-->
     <script th:src="@{js/libs.min.js}"></script>
@@ -120,6 +120,7 @@
     <script th:src="@{js/mixio-custom.js}"></script>
     <script th:src="@{js/maps/map-dark.js}"></script>
     <script th:src="@{https://maps.googleapis.com/maps/api/js(key='AIzaSyC_eHlYUcq_MCDuQBPwjs5ljaUQ25umFu0')}"></script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v3.3"></script>
 
     <!-- Load Scripts End-->
 

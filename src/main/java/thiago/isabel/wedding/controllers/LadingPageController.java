@@ -6,8 +6,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class LadingPageController {
 
+
     @GetMapping("/index")
     public void index() {
-
     }
+
+
 }
