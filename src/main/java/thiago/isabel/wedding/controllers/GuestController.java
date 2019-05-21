@@ -1,13 +1,13 @@
 package thiago.isabel.wedding.controllers;
 
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.ExceptionHandler;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 import thiago.isabel.wedding.Domain.Guest;
 import thiago.isabel.wedding.services.GuestsService;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
@@ -21,19 +21,25 @@ public class GuestController {
     }
 
     @PostMapping("/guest")
+    @ResponseStatus(value = HttpStatus.OK)
     public void add(@ModelAttribute Guest guest) throws IOException {
         guestsService.add(guest.getName(), guest.getCompanionsNumber());
     }
 
     @RequestMapping(value = "/guests.csv")
-    public String download(HttpServletResponse response) throws IOException {
-        response.setContentType("text/plain; charset=utf-8");
-        return guestsService.get();
+    public void download(HttpServletResponse response) throws IOException {
+        response.setContentType("text/csv; charset=utf-8");
+        var csvContent = guestsService.get();
+        response.getWriter().print(csvContent);
     }
 
     @ExceptionHandler({IOException.class, Exception.class})
-    public String handleError() {
-        return "index";
+    public ModelAndView  handleError(HttpServletRequest req, Exception ex) {
+        var modelAndView = new ModelAndView();
+        modelAndView.addObject("exception", ex);
+        modelAndView.addObject("url", req.getRequestURL());
+        modelAndView.setViewName("error");
+        return modelAndView;
     }
 
 

@@ -12,14 +12,15 @@ import java.nio.file.Paths;
 @Service
 public class GuestsCsvFileService implements GuestsService {
 
-    private static final String pathToCsv = "/guest-list.csv";
+    private static final String pathToCsv = "guest-list.csv";
 
     @Override
     public void add(String guestName, int companionsNumber) throws IOException {
         var csvFile = new File(pathToCsv);
+        var fileExists = csvFile.exists();
 
-        var csvWriter = new FileWriter(csvFile);
-        if (csvFile.isFile()) {
+        var csvWriter = new FileWriter(csvFile, true);
+        if (!fileExists) {
             csvWriter.append("Guest Name");
             csvWriter.append(",");
             csvWriter.append("Companions Number");

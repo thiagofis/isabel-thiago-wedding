@@ -271,6 +271,31 @@ $(function() {
   // --------------------------------------------- //
   // Contact Form End
   // --------------------------------------------- //
+  //
+  // --------------------------------------------- //
+  // We are waiting for you Form Start
+  // --------------------------------------------- //
+  $("#we-are-waiting-for-you-form-id").submit(function() { //Change
+		var th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "guest", //Change
+			data: th.serialize()
+		}).done(function() {
+      $('.contact').find('.form').addClass('is-hidden');
+      $('.contact').find('.reply-group').addClass('is-visible');
+			setTimeout(function() {
+				// Done Functions
+        $('.contact').find('.reply-group').removeClass('is-visible');
+        $('.contact').find('.form').delay(300).removeClass('is-hidden');
+				th.trigger("reset");
+			}, 5000);
+		});
+		return false;
+	});
+  // --------------------------------------------- //
+  // We are waiting for you Form End
+  // --------------------------------------------- //
 
   // --------------------------------------------- //
   // Write-a-Line Form Start
