@@ -4,7 +4,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
-import thiago.isabel.wedding.Domain.Guest;
+import thiago.isabel.wedding.domain.Guest;
 import thiago.isabel.wedding.services.GuestsService;
 
 import javax.servlet.http.HttpServletRequest;

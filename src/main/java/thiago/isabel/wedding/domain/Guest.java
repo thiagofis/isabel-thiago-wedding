@@ -1,4 +1,4 @@
-package thiago.isabel.wedding.Domain;
+package thiago.isabel.wedding.domain;
 
 public class Guest {
 
