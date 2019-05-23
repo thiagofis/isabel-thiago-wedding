@@ -58,6 +58,11 @@
     vertical-align: super;
 }
 
+
+.form-content form .gift-group input[type="radio"]:checked+span {
+	text-decoration: underline;
+}
+
 .form-content form button.gift{
 	padding: 18px 41px;
     text-align: center;
