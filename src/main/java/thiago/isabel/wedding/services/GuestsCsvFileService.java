@@ -12,7 +12,7 @@ import java.nio.file.Paths;
 @Service
 public class GuestsCsvFileService implements GuestsService {
 
-    private static final String pathToCsv = "guest-list.csv";
+    private static final String pathToCsv = "/wedding-files/guest-list.csv";
 
     @Override
     public void add(String guestName, int companionsNumber) throws IOException {
