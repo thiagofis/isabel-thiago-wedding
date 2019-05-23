@@ -88,29 +88,68 @@
     <![endif]-->
     <!-- Old Browsers Support End-->
 
+
+
+
+
     <div id="fullpage-scroll">
-        <div class="section fp-auto-height content-section about">
+
+
+
+        <!-- Contact Section Start-->
+        <div th:fragment="location" class="section fp-auto-height-responsive content-section contact" data-anchor="location-page">
             <div class="container-fluid p-0 fullheight">
-                <!-- Stay in Touch Block Start -->
-                <div class="row no-gutters justify-content-center">
-                    <div class="col-12 col-xl-6">
-                        <div class="content-block additional-block auto-height centered">
+                <div class="row m-0 fullheight">
+
+                    <!-- Contact Section Info Start-->
+                    <div class="col-12 col-xl-6 p-0 content-section_info">
+                        <div class="content-block">
 
                             <!-- Section Title Start -->
-                            <div class="section-title centered">
-                                <p class="additional-title">Opsss!!!</p>
-                                <p class="additional-subtitle">Parece que alguma coisa saiu errado...</p>
+                            <div class="section-title">
+                                <span class="subtitle" th:text="${code}">Deu ruim</span>
+                                <span class="title">Opss!</span>
+                                <h2>Deu ruim...</h2>
+                                <span class="divider"></span>
+                                <p class="contact-text">Parece que alguma coisa saiu errado.</p>
+                                <a href="/" class="btn btn-line">
+                                    <span>Clique aqui para voltar para a página principal.</span>
+                                </a>
                             </div>
                             <!-- Section Title End -->
 
                         </div>
                     </div>
-                </div>
-                <!-- Stay in Touch Block End -->
+                    <!-- Contact Section Info End-->
 
+                    <!-- Features Section Media Start -->
+                    <div class="col-12 col-xl-6 p-0 fullheight home_media" style="background-image:url(img/photos/error.jpg);">
+
+                        <!-- Color Layer Start -->
+                        <div class="layer-black"></div>
+                        <!-- Color Layer End -->
+
+                    </div>
+                    <!-- Features Section Media End -->
+
+                </div>
             </div>
         </div>
+        <!-- Contact Section End-->
+
+
+
+
+
+
+
+
+
+
+
     </div>
+    <script th:src="@{js/libs.min.js}"></script>
+    <script th:src="@{js/mixio-custom.js}"></script>
 
 </body>
 </html>
