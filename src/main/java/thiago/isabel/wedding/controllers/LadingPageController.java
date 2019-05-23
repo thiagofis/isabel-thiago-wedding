@@ -9,4 +9,8 @@ public class LadingPageController {
     @GetMapping("/index")
     public void index() {
     }
+
+    @GetMapping("/thanks")
+    public void thanks() {
+    }
 }

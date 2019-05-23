@@ -2,7 +2,7 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Ooopss...</title>
+    <title>Obrigado</title>
 
     <!-- Meta Tags-->
     <meta name="description" content="Save the date - 16 de maio de 2020">
@@ -88,48 +88,40 @@
     <![endif]-->
     <!-- Old Browsers Support End-->
 
+
+
+
+
     <div id="fullpage-scroll">
 
-        <!-- Contact Section Start-->
-        <div class="section fp-auto-height-responsive content-section contact" data-anchor="location-page">
+
+
+        <!-- Home Section Start-->
+        <div class="section fp-auto-height-responsive home" data-anchor="facebook-comments-page" th:fragment="facebook-comments">
             <div class="container-fluid p-0 fullheight">
                 <div class="row m-0 fullheight">
 
-                    <!-- Contact Section Info Start-->
-                    <div class="col-12 col-xl-6 p-0 content-section_info">
-                        <div class="content-block">
+                    <!-- Main Section Intro Start -->
+                    <div class="col-12 fullheight home_intro" style="background-image:url(img/photos/thanks.jpg);">
 
-                            <!-- Section Title Start -->
-                            <div class="section-title">
-                                <span class="subtitle" th:text="${code}">Deu ruim</span>
-                                <span class="title">Opss!</span>
-                                <h2>Deu ruim...</h2>
-                                <span class="divider"></span>
-                                <p class="contact-text">Parece que alguma coisa saiu errado.</p>
-                                <a href="/" class="btn btn-line">
-                                    <span>Clique aqui para voltar para a página principal.</span>
-                                </a>
-                            </div>
-                            <!-- Section Title End -->
-
-                        </div>
-                    </div>
-                    <!-- Contact Section Info End-->
-
-                    <!-- Features Section Media Start -->
-                    <div class="col-12 col-xl-6 p-0 fullheight home_media" style="background-image:url(img/photos/error.jpg);">
-
-                        <!-- Color Layer Start -->
                         <div class="layer-black"></div>
-                        <!-- Color Layer End -->
 
+                        <!-- Main Headline Start -->
+                        <div class="headline">
+                            <h1 class="light-text">Muito<br>obrigado</h1>
+                            <p class="light-text">Amamos o seu presente!</p>
+                            <a href="/" class="btn btn-line btn-line-light">
+                                <span>Clique aqui para voltar para a página principal.</span>
+                            </a>
+                        </div>
+                        <!-- Main Headline End -->
                     </div>
-                    <!-- Features Section Media End -->
+                    <!-- Main Section Intro End -->
 
                 </div>
             </div>
         </div>
-        <!-- Contact Section End-->
+        <!-- Home Section End-->
 
     </div>
     <script th:src="@{js/libs.min.js}"></script>
