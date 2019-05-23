@@ -33,7 +33,7 @@ $(function() {
     longitude = -43.580764,
     map_zoom = 16;
 	
-  var condominioCalifornia = new google.maps.LatLng(-22.9336661,-43.5786944);	
+  var condominioCalifornia = new google.maps.LatLng(-22.931992, -43.576702);
   var jardimMagarca = new google.maps.LatLng(-22.935726, -43.580764);	
   var parkShopping = new google.maps.LatLng(-22.927144, -43.574778);	
 
